@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { Database, Table2, KeyRound, Link } from 'lucide-react';
-import { Skeleton } from '../components/ui/skeleton';
+import { Skeleton } from './ui/skeleton';
 
 const SchemaViewer: React.FC = () => {
   const { schema, schemaLoading, activeConnection } = useApp();
